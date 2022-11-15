@@ -37,4 +37,3 @@ The plugin settings are highly customizable and you can change:
 
 ## Preview
 ## ![](https://github.com/Dani3lSun/apex-plugin-apextooltip/blob/master/preview.gif)
-- [tooltipster](https://github.com/iamceege/tooltipster)
