@@ -33,7 +33,7 @@ The plugin settings are highly customizable and you can change:
 - Uppy is a sleek, modular JavaScript file uploader that integrates seamlessly with any application. It’s fast, has a comprehensible API and lets you worry about more important problems than building a file uploader.
 
 ## Demo Application
-[https://apex.oracle.com/pls/apex/f?p=APEXPLUGIN](https://apex.oracle.com/pls/apex/f?p=APEXPLUGIN)
+Coming soon!
 
 ## Preview
-## ![](https://github.com/Dani3lSun/apex-plugin-apextooltip/blob/master/preview.gif)
+## ![](https://github.com/124bits/oracle-apex-plugin-uppy/blob/d3a32485d261f693e069d83d12998577f10fe31d/img/uppy-plugin-settings.png?raw=true)
