@@ -25,7 +25,7 @@ The plugin settings are highly customizable and you can change:
 
 ## How to use
 - Create a new Dynamic Action with event `Page Load`.
-- As action choose `124BITS - Uppy Dashboard Plugin`.
+- As action choose `124BITS - Uppy File Uploader`.
 - Choose best fitting plugin attributes (help included)
 
 ## Uppy Library
