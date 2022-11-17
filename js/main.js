@@ -13,17 +13,18 @@ const component = {
     // get pluigin ajax identifier
     const ajaxIdentifier = action.ajaxIdentifier
     // get plugin attributes
-    const restrictions       = JSON.parse(action.attribute01)
-    const dashboardOptions   = JSON.parse(action.attribute02)
-    const imageEditor        = (action.attribute03 === 'Y')
-    const targetElement      = action.attribute04
-    const additionalFeatures = action.attribute05 || 'empty'
-    const usePresignUrl      = (action.attribute07 === 'Y')
-    const theme              = action.attribute08
-    const onCompleteCallback = action.attribute09
-    const localePack         = action.attribute10
-    const destination        = action.attribute11
-    const uppyId             = action.attribute12 || Date.now()
+    const restrictions        = JSON.parse(action.attribute01)
+    const dashboardOptions    = JSON.parse(action.attribute02)
+    const imageEditor         = (action.attribute03 === 'Y')
+    const targetElement       = action.attribute04
+    const additionalFeatures  = action.attribute05 || 'empty'
+    const usePresignUrl       = (action.attribute07 === 'Y')
+    const theme               = action.attribute08
+    const onCompleteCallback  = action.attribute09
+    const localePack          = action.attribute10
+    const destination         = action.attribute11
+    const uppyId              = action.attribute12 || Date.now()
+    const uploadLinkObjectKey = action.attribute13
     // uppy code
     const uppy = new Uppy.Uppy({
       autoProceed: false,
@@ -61,7 +62,7 @@ const component = {
     destination === 'AwsS3' &&
     uppy.use(Uppy[destination], {
       async getUploadParameters (file) {
-        let putUrl
+        let uploadParameters
 
         if (usePresignUrl) {
           await apex.server.plugin(
@@ -73,16 +74,15 @@ const component = {
               x04: file.size,
             }, 
             {
-              dataType: "text",
-              success: (uploadLink) => putUrl = uploadLink
+              success: (data) => uploadParameters = data
             }
           )
         }
 
         return {
           method: 'put',
-          url: putUrl,
-          fields: null,
+          url: uploadParameters[uploadLinkObjectKey],
+          fields: uploadParameters,
           headers: {"Content-Type": `${file.type}; charset=utf-8`},
         }
       }
