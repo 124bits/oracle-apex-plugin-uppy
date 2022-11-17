@@ -19,7 +19,8 @@ The plugin settings are highly customizable and you can change:
 - **Additional Features** - Enable Audio, Webcam, and Screen Capture sources.
 - **Destinations** - You can choose different upload destinations. For now, only avaliable `AWS S3 / Cloudflare R2`.
 - **Use Presinged URL Method** - Enable Uppy to use a presigned generated URL.
-- **Presigned URL Ajax PL/SQL Function** - PL/SQL function that will return the presigned URL.
+- **Presigned URL Ajax PL/SQL Function** - PL/SQL function that will return the presigned URL object key. It must return a JSON object.
+- **Upload Link Object Key** - Define the upload object key returned from Presigned URL Ajax PL/SQL Function.
 - **On Complete Callback Function** - Allow users to define the callback function fired when all uploads are completed.
 - **Uppy ID** - Define a site-wide unique ID for the Uppy instance. If several Uppy instances are being used, for instance, on two different pages, an id should be specified. This allows Uppy to store information in localStorage without colliding with other Uppy instances.
 
