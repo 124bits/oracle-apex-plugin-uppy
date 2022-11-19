@@ -15,6 +15,8 @@ The plugin settings are highly customizable and you can change:
 - **Restrictions** - Optionally, [restrictions](https://uppy.io/docs/uppy/#restrictions) provide rules and conditions to limit the type and/or number of files that can be selected.
 - **Dashboard Options** - The Dashboard can be extensively customized by configuring the [options](https://uppy.io/docs/dashboard/#Options).
 - **Enable Image Editor** - Allows users to crop, rotate, zoom and flip images that are added to Uppy.
+- **Compress Images** - Enable/Disable compress images option. Optimizes images (JPEG, PNG), saving on average up to 60% in size.
+- **Compressor Options** - Check for Compressor options [here](https://github.com/fengyuanchen/compressorjs#options)
 - **Target Element** - Target to render Uppy Plugin (reference to a html element id or class).
 - **Additional Features** - Enable Audio, Webcam, and Screen Capture sources.
 - **Destinations** - You can choose different upload destinations. For now, only avaliable `AWS S3 / Cloudflare R2`.
