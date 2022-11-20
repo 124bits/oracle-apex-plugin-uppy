@@ -31,8 +31,8 @@ The plugin settings are highly customizable and you can change:
 - As action choose `124BITS - Uppy File Uploader`.
 - Choose best fitting plugin attributes (help included)
 
-## Uppy Library
-- The plug-in is built on top of the open source [Uppy](https://uppy.io/) javascript library (Uppy version 3.3.0).
+## Uppy Library (v3.3.1)
+- The plug-in is built on top of the open source [Uppy](https://uppy.io/) javascript library.
 - Uppy is a sleek, modular JavaScript file uploader that integrates seamlessly with any application. It’s fast, has a comprehensible API and lets you worry about more important problems than building a file uploader.
 
 ## Demo Application
