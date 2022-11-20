@@ -28,7 +28,6 @@ const component = {
     }
     // uppy code
     const uppy = new Uppy.Uppy({
-      autoProceed: false,
       locale: Uppy.locales[plugin.localePack],
       id: plugin.uppyId,
       restrictions: plugin.restrictions,
@@ -37,13 +36,9 @@ const component = {
     uppy.use(Uppy.Dashboard, {
       proudlyDisplayPoweredByUppy: false,
       target: plugin.targetElement,
-      allowMultipleUploads: true,
       inline: true,
-      replaceTargetContent: true,
       showProgressDetails: true,
       theme: plugin.theme,
-      browserBackButtonClose: false,
-      hideUploadButton: false,
       hideProgressAfterFinish: true,
       ...plugin.dashboardOptions,
     })
