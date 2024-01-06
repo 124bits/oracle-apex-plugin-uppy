@@ -39,4 +39,4 @@ The plugin settings are highly customizable and you can change:
 Coming soon!
 
 ## Preview
-## ![](https://github.com/124bits/oracle-apex-plugin-uppy/blob/d3a32485d261f693e069d83d12998577f10fe31d/img/uppy-plugin-settings.png?raw=true)
+## ![](https://github.com/124bits/oracle-apex-plugin-uppy/blob/main/img/uppy-plugin-settings.png?raw=true)
