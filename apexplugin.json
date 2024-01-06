@@ -1,6 +1,6 @@
 {
   "name" : "124BITS - Uppy File Uploader",
-  "version" : "1.0.0",
+  "version" : "1.0.1",
   "description" : "Oracle Apex Plugin to integrate with Uppy file uploader.",
   "keywords" : ["drag", "drop", "file", "upload", "multi", "multiple", "aws"],
   "homepage" : "https://github.com/124bits/oracle-apex-plugin-uppy",
@@ -13,7 +13,7 @@
   "author" : {
     "name" : "Fernando D. Richter",
     "email" : "fgt.fernando@gmail.com",
-    "url" : "https://app.124bits.com/",
+    "url" : "https://github.com/124bits/oracle-apex-plugin-uppy.git",
     "twitter" : "",
     "donationUrl" : ""
   },
@@ -24,7 +24,7 @@
   "oracle" : {
     "versions" : ["12.1.0.1", "12.2.0.1", "18.4.0.0", "19.0.0.0", "21.0.0.0"],
     "apex" : {
-      "versions" : ["20.1", "20.2", "21.1", "21.2", "22.1", "22.2"],
+      "versions" : ["20.1", "20.2", "21.1", "21.2", "22.1", "22.2", "23.1", "23.2"],
       "plugin" : {
         "internalName" : "124BITS.UPPY",
         "type" : "dynamic action",
