@@ -28,7 +28,7 @@
       "plugin" : {
         "internalName" : "124BITS.UPPY",
         "type" : "dynamic action",
-        "demo" : "",
+        "demo" : "https://plugins.fdrichter.work/ords/r/fdrichterws/plugins/home",
         "previewImage" : "https://github.com/124bits/oracle-apex-plugin-uppy/raw/main/img/uppy-plugin-settings.png?raw=true"
       }
     }
